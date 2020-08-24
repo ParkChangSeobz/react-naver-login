@@ -75,7 +75,7 @@ var initLoginButton = function (props) {
             if (!status || location.hash.indexOf('#access_token') === -1) {
                 return;
             }
-            window.opener.naver.successCallback(naverLogin.user);
+            window.opener.naver.successCallback(naverLogin);
             window.close();
             // clearInterval(initLoop);
         });
